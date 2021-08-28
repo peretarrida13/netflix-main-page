@@ -1,0 +1,1081 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbarDiv{
+  text-decoration: none;
+}
+
+.LandingPageBackground{
+  background-image:  linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/73d5bfda-8e95-4199-8e61-1ce9717674a7/ES-es-20210607-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+}
+
+.emailInput:focus ~ .floating,
+.emailInput:not(:focus):not(:placeholder-shown) ~ .floating{
+  position:  absolute;
+  top: 10%;
+  left:3%;
+  color: black;
+
+  font-size: 12px;
+  border-radius: 3px;
+  border: none;
+}
+
+.emailInput{
+  height: 70px;
+  width: 500px;
+
+  transition: 0.2s ease all;
+  padding: 20px;
+  border-radius: 3px;
+  border: none;
+}
+
+.floating{
+  position:  absolute;
+  top: 37%;
+  left:3%;
+  color: black;
+  transition: 0.2s ease all;
+
+  font-size: 18px;
+}
+
+.smallEmailInput:focus ~ .smallFloating,
+.smallEmailInput:not(:focus):not(:placeholder-shown)  ~ .smallFloating{
+  position:  absolute;
+  top: 45%;
+  left:34%;
+  color: black;
+
+  font-size: 12px;
+  border-radius: 3px;
+  border: none;
+}
+
+.smallEmailInput{
+  height: 60px;
+  width: 450px;
+
+  transition: 0.2s ease all;
+  padding: 20px;
+  border-radius: 3px;
+  border: none;
+}
+
+.smallFloating{
+  position:  absolute;
+  top: 60%;
+  left:34%;
+  color: black;
+  transition: 0.2s ease all;
+
+  font-size: 18px;
+}
+
+.getStartedBtn{
+  background-color: rgb(189, 5, 5);
+  color: white;
+  font-size: 1.875rem;
+  border:none;
+  height:70px;
+  width:225px;
+
+  position:relative;
+  top:.3rem;
+  border-radius: 3px;
+}
+
+.getStartedBtn:hover{
+  background-color: red;
+}
+
+.smallGetStartedBtn{
+  background-color: rgb(189, 5, 5);
+  color: white;
+  font-size: 1.6rem;    
+  border:none;
+  height:60px;
+  width:200px;
+
+  position:relative;
+  top:.3rem;
+  border-radius: 3px;
+}
+
+.smallGetStartedBtn:hover{
+  background-color: red;
+}
+
+
+.tvimgDiv{
+  position: relative;
+  z-index: 2;
+}
+
+.tvVideoDiv{
+  position: relative;
+  top:-65%;
+  z-index: 0;
+}
+
+.devices{
+  height:400px;
+  z-index: 2;
+}
+
+.deviceVideo{
+  position: relative;
+  top:-106%;
+  left:15%;
+
+  margin-right: 15%;
+
+  z-index: -1;
+}
+
+table{
+  position: relative;
+  top:20%;
+  left: 30%;
+  margin-right: 30%;
+  color: rgb(82, 82, 82);
+}
+
+td{
+  font-size: 13px;
+  padding-right:100px;
+}
+
+.last{
+  position: relative;
+  top:20%;
+  left: 30%;
+  margin-right: 30%;
+  color: rgb(82, 82, 82);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.div1Hidden{
+  display: none;
+  position:relative;
+  top:10rem;
+  left:27%;
+
+  width:815px;
+  height:0px;
+  overflow: hidden;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;  
+
+  animation: fadeIn 0.3s;
+}
+
+.div1Show{
+  position:relative;
+  top:5.5rem;
+  left:27%;
+
+  width:815px;
+  height:326px;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;
+
+  animation: fadeIn 0.15s;
+}
+
+
+.div2Hidden{
+  display: none;
+  position:relative;
+  top:10.1%;
+  left:27%;
+
+  width:815px;
+  height:0px;
+  overflow: hidden;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;  
+
+  animation: fadeIn 0.3s;
+}
+
+.div2Show{
+  position:relative;
+  top:10.5rem;
+  left:27%;
+
+  width:815px;
+  height:160px;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;
+
+  animation: fadeIn 0.15s;
+}
+
+.div3Hidden{
+  display: none;
+  position:relative;
+  top:10.1%;
+  left:27%;
+
+  width:815px;
+  height:0px;
+  overflow: hidden;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;  
+
+  animation: fadeIn 0.3s;
+}
+
+.div3Show{
+  position:relative;
+  top: 7.7em;
+  left:27%;
+
+  width:815px;
+  height:400px;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;
+
+  animation: fadeIn 0.15s;
+}
+
+.div4Hidden{
+  display: none;
+  position:relative;
+  top:10.1%;
+  left:27%;
+
+  width:815px;
+  height:0px;
+  overflow: hidden;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;  
+
+  animation: fadeIn 0.3s;
+}
+
+.div4Show{
+  position:relative;
+  top: 11.1em;
+  left:27%;
+
+  width:815px;
+  height:200px;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;
+
+  animation: fadeIn 0.15s;
+}
+
+.div5Hidden{
+  display: none;
+  position:relative;
+  top:10.1%;
+  left:27%;
+
+  width:815px;
+  height:0px;
+  overflow: hidden;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;  
+
+  animation: fadeIn 0.3s;
+}
+
+.div5Show{
+  position:relative;
+  top: 11.4em;
+  left:27%;
+
+  width:815px;
+  height:160px;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;
+
+  animation: fadeIn 0.15s;
+}
+
+.div6Hidden{
+  display: none;
+  position:relative;
+  top:10.1%;
+  left:27%;
+
+  width:815px;
+  height:0px;
+  overflow: hidden;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;  
+
+  animation: fadeIn 0.3s;
+}
+
+.div6Show{
+  position:relative;
+  top: 14.9em;
+  left:27%;
+
+  width:815px;
+  height:300px;
+
+  border:none;
+  color:white;
+  background-color:rgb(50, 50, 50);
+
+  font-weight: 400;
+  font-size:1.425rem;
+  padding: 1.2em;
+
+  animation: fadeIn 0.15s;
+}
+
+/*SIGN IN PAGE*/
+
+.signInContainer{
+  background-image:  linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/73d5bfda-8e95-4199-8e61-1ce9717674a7/ES-es-20210607-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+
+  height: 110vh;
+  width: 100%;
+}
+
+.signInCard{
+  height: 600px;
+  width:450px;
+
+  background-color:rgba(0, 0, 0, 0.75);
+}
+
+
+.signInEmailInput{
+  position:relative;
+  top:60px;
+  left:50px;
+
+  height: 50px;
+  width:314px;
+
+  background-color: #333;
+  border:none;
+  border-radius: 5px;
+
+  color:gray;
+  
+  padding: 20px;
+}
+
+.passwordInput {
+  position:relative;
+  top:100px;
+  left:50px;
+
+  height: 50px;
+  width:314px;
+
+  background-color: #333;
+  border:none;
+  border-radius: 5px;
+
+  color:gray;
+  padding: 20px;
+}
+
+.signInEmailInput:focus ~ .signInEmailLabel,
+.signInEmailInput:not(:focus):not(:placeholder-shown)  ~ .signInEmailLabel{
+  color: gray;
+
+  font-size: 11px;
+
+  position:absolute;
+  top:120px;
+}
+
+.signInEmailLabel{
+  color:gray;
+
+  position:absolute;
+  top: 130px;
+  left: 70px;
+
+  font-size: 16px;
+
+  transition: 0.2s ease all;
+}
+
+.passwordInput:focus ~ .signInPasswordLabel,
+.passwordInput:not(:focus):not(:placeholder-shown)  ~ .signInPasswordLabel{
+  color: gray;
+
+  font-size: 11px;
+
+  position:absolute;
+  top:210px;
+}
+
+.signInPasswordLabel{
+  color:gray;
+
+  position:absolute;
+  top: 220px;
+  left: 70px;
+
+  font-size: 16px;
+
+  transition: 0.2s ease all;
+}
+
+.captcha{
+  opacity: 0;
+
+  color:gray;
+  position:relative;
+  top:130px;
+  left:50px;
+  font-size:12px;
+
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+
+/*ERROR PAGE*/
+.returnBtn{
+  text-decoration:none;
+  color:black;
+
+  background-color:white;
+  padding:10px 2rem 10px 2rem;
+  border-radius:5px;
+
+  position:relative;
+  top:240px;
+
+  font-size:1.2rem;
+  font-weight:bold;
+}
+
+.returnBtn:hover{
+  text-decoration:none;
+  color:black;
+
+  background-color:rgb(255, 255, 255, 0.75);
+  padding:10px 2rem 10px 2rem;
+  border-radius:5px;
+
+  position:relative;
+  top:240px;
+
+  font-size:1.2rem;
+  font-weight:bold;
+}
+
+.emailSignUp:focus ~ .emailSpan,
+.emailSignUp:not(:focus):not(:placeholder-shown)  ~ .emailSpan{
+  position:absolute;
+  top:10px;
+  left:10px;
+
+  color: black;
+
+  font-size: 12px;
+  border-radius: 3px;
+  border: none;
+}
+
+.emailSignUp{
+  height: 50px;
+  width: 440px;
+
+  transition: 0.2s ease all;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.emailSpan{
+  color: black;
+  transition: 0.2s ease all;
+
+  font-size: 18px; 
+
+  position:absolute;
+  top:20px;
+  left:10px;
+}
+
+.passwordSignUp:focus ~ .passwordSpan,
+.passwordSignUp:not(:focus):not(:placeholder-shown)  ~ .passwordSpan{
+  position:absolute;
+  top:75px;
+  left:10px;
+
+  color: black;
+
+  font-size: 12px;
+  border-radius: 3px;
+  border: none;
+}
+
+.passwordSignUp{
+  height: 50px;
+  width: 440px;
+
+  transition: 0.2s ease all;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid gray; 
+}
+
+.passwordSpan{
+  color: black;
+  transition: 0.2s ease all;
+
+  font-size: 18px; 
+
+  position:absolute;
+  top:90px;
+  left:10px;
+}
+
+.giftCardInput:focus ~ .giftCardLabel,
+.giftCardInput:not(:focus):not(:placeholder-shown)  ~ .giftCardLabel{
+  position:absolute;
+  top:85px;
+  left:20px;
+
+  color: black;
+
+  font-size: 12px;
+  border-radius: 3px;
+  border: none;
+}
+
+.giftCardInput{
+  height: 60px;
+  width: 440px;
+
+  padding-left:20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.giftCardLabel{
+  position: relative;
+  left:-420px;
+
+  color: #8c8c8c;
+  transition: 0.5s ease all;
+}
+
+.mainPageNavDiv{
+  height: 60px;
+  width:100%;
+  transform: rotate(180deg);
+
+  position: relative;
+  top:-40px;
+}
+
+.underDivBlack{
+  height: 60px;
+  width:100%;
+
+  position: relative;
+  top:399.5px;
+}
+
+.bigFilm{
+  width:100%;
+  height:auto;
+  
+  position:absolute;
+  top:-20px;
+
+  z-index: -1;
+}
+
+.bigPoster-text{
+  height: 200px;
+  width:400px;
+  color:white; 
+
+  position: relative;
+  top:100px;
+  left:100px;
+}
+
+.movieTitle{
+  font-weight: 800;
+  font-size: 3rem;
+  padding-bottom: .5rem;
+}
+
+.movieDescription{
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.bannerFade{
+  background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);;
+  width:100%;
+  height: 7.4rem;
+
+  z-index: 0;
+  position: absolute;
+  top: 532px;
+}
+
+.leftArrowDiv{
+  background-color: transparent;
+  height:400px;
+  width:80px;
+
+  position:relative;
+  top:-540px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all, .4s ease-in-out;
+}
+
+.leftArrowDiv:hover{
+  background-color: rgb(51, 51, 51, 0.75);
+}
+
+.leftArrow{
+  height: 40px;
+  width: auto;
+
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+
+  color: white;
+}
+
+.leftArrow:hover{
+  height:60px;
+  width:auto;
+
+  color: white;
+}
+
+.rightArrowDiv{
+  background-color: transparent;
+  height:400px;
+  width:80px;
+
+  position:relative;
+  left:1823px;
+  top:-940px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all, .4s ease-in-out;
+}
+
+.rightArrowDiv:hover{
+  background-color: rgb(51, 51, 51, 0.75);
+}
+
+.rightArrow{
+  height: 40px;
+  width: auto;
+
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+
+  color: white;
+}
+
+.rightArrow:hover{
+  height:60px;
+  width:auto;
+
+  color: white;
+}
+
+.rowBigFilm{
+  display: inline-block;
+  margin-right:10px;
+
+  background-color: #333;
+  height: 360px;
+  width: 240px;
+
+  border-radius:5px;
+}
+
+.netflixOriginalDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width:100%;
+  height:500px;
+
+  overflow: scroll;
+
+  white-space: nowrap;
+
+  margin: 30px 0;
+
+  padding-left:40px;
+
+  position:relative;
+  top:-60px;
+  
+  scroll-behavior: smooth;
+}
+
+.netflixOriginalDiv::-webkit-scrollbar{
+  display: none;
+}
+
+.imgNetflixRow{
+  height:360px;
+  width:240px;
+
+  border-radius:5px;
+  z-index: 0;
+
+  transition: transform 500ms;
+
+  cursor:pointer;
+}
+
+.imgNetflixRow:hover{
+  transform: scale(1.2);
+  border-radius:5px;
+
+  z-index:1;
+}
+
+.smallRightArrowDiv{
+  background-color: transparent;
+  height:200px;
+  width:60px;
+
+  position:relative;
+  left:1843px;
+  top:-1355px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all, .4s ease-in-out;
+}
+
+.smallRightArrowDiv:hover{
+  background-color: rgb(51, 51, 51, 0.75);
+}
+
+.smallLeftArrowDiv{
+  background-color: transparent;
+  height:200px;
+  width:60px;
+
+  position:relative;
+  top:-1155px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all, .4s ease-in-out;
+}
+
+.smallLeftArrowDiv:hover{
+  background-color: rgb(51, 51, 51, 0.75);
+}
+
+.smallImgDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width:100%;
+  height:200px;
+
+  overflow: scroll;
+
+  white-space: nowrap;
+
+  margin: 30px 0;
+
+  position:relative;
+  top:-920px;
+  
+  scroll-behavior: smooth;
+}
+
+.smallImgDiv::-webkit-scrollbar{
+  display: none;
+}
+
+
+.smallImgStyle{
+  height:160px;
+  width:285px;
+
+  border-radius:5px;
+  z-index: 0;
+
+  transition: transform 500ms;
+  margin-left: 15px;
+  color:white;
+
+  cursor:pointer;
+}
+
+.smallImgStyle:hover{
+  transform: scale(1.2);
+  border-radius:5px;
+
+  z-index:1;
+}
+
+.topRated{
+  position: relative;
+  bottom:400px;
+}
+
+.actionMovies{
+  position: relative;
+  bottom:800px;
+}
+
+.comedyMovies{
+  position: relative;
+  bottom:1200px;
+}
+
+.horrorMovies{
+  position: relative;
+  bottom:1600px;
+}
+
+.romanceMovies{
+  position: relative;
+  bottom:2000px;
+}
+
+.documentaries{
+  position: relative;
+  bottom:2400px;
+}
+
+.navbarMainPage{
+  position:fixed;
+  top:0;
+
+  width:100%;
+  height:80px; 
+
+  z-index: 100;
+}
+
+.navbarMainPage-show{
+  position:fixed;
+  top:0;
+
+  background-color: #333;
+
+  width:100%;
+  height:80px; 
+
+  z-index: 100;
+}
+
+
+.modalPresentation{
+  z-index: 1200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modalWrap{
+  z-index: -1;
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movieModal{
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  background: #111;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 400ms ease-in-out 2s;
+  animation: fadeIn 400ms;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.modalPoster{
+  width: 100%;
+  height: auto;
+}
+
+.movieDescriptionDiv{
+  padding: 40px;
+  color:white;
+}
+
+.releaseDate{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.title{
+  padding: 0;
+  font-size: 40px;
+  margin: 16px 0;
+  font-weight: 700;
+}
+
+.overview{
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.rating{
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.userPercent{
+  color: #46d369;
+  padding-right: 20px;
+}
+
+.closeModalIcon{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  color:white;
+
+  height: 30px;
+  width: auto;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: scale(0.5);
+  } to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
