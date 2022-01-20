@@ -20,5 +20,6 @@ For getting all the films and their information i used https://api.themoviedb.or
   <li>AXIOS</li>
   <li>React Icons</li>
 </list>
-## ScreenShot
+
+## Screenshot
 <img src='https://www.peretarrida.com/static/media/netflix.75f3cfb2feaa69ead9ca.PNG'></img>
